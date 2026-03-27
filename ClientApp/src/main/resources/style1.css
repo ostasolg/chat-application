@@ -1,0 +1,61 @@
+.button {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7ebcea, #2f3c8f),
+            linear-gradient(#424eb7, #292675),
+            linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12px;
+}
+
+
+.button:hover {
+    -fx-background-color:
+            #4c4646,
+            linear-gradient(#408cc2, #4e53bb),
+            linear-gradient(#4f46c7, #3a31aa),
+            linear-gradient(#596fbd, #3c5693);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12px;
+}
+.button:pressed {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#5d8eb3, #1b2c55),
+            linear-gradient(#2e4f8d, #152242),
+            linear-gradient(#28427f, #14203e);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12px;
+}
+
+.label {
+    -fx-font-size: 20px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #684dc6;
+    -fx-effect: innershadow( three-pass-box , rgb(35, 20, 89), 6, 0.0 , 4 , 4 );
+
+}
+
+.labelMain {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #5b3bc6;
+    -fx-effect: innershadow( three-pass-box , rgba(17, 10, 49, 0.87), 6, 0.0 , 4 , 4 );
+
+}
+
+.error {
+    -fx-font-size: 15px;
+    -fx-text-fill: #FF0000;
+    -fx-effect: dropshadow( gaussian , rgba(161, 0, 0, 0.9), 0,0,1.5,1.5 );
+}

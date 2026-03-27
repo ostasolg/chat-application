@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://46.229.230.245:5432/dm006800db</property>
+        <property name="connection.username">dm006800</property>
+        <property name="connection.password">k1yVKSw@</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+        <!-- <property name="hbm2ddl.auto">validate</property> -->
+
+        <!-- The mapping information of entities -->
+        <mapping class="pjv.model.ChatRoom" />
+        <mapping class="pjv.model.Client" />
+        <mapping class="pjv.model.Message" />
+
+    </session-factory>
+</hibernate-configuration>

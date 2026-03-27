@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="536.0" prefWidth="815.0" style="-fx-background-color: #291840;" stylesheets="@style2.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pjv.controller.ChatroomWindowController">
+    <children>
+        <VBox layoutX="21.0" layoutY="14.0" prefHeight="456.0" prefWidth="727.0">
+            <children>
+                <ScrollPane prefHeight="365.0" prefWidth="646.0">
+                    <content>
+                        <TextArea fx:id="textareaMessages" editable="false" prefHeight="379.0" prefWidth="745.0" style="-fx-background-color: #838383;" />
+                    </content></ScrollPane>
+                <HBox prefHeight="99.0" prefWidth="792.0">
+                    <children>
+                        <Label alignment="TOP_CENTER" prefHeight="25.0" prefWidth="149.0" style="-fx-font: normal bold 20px 'serif'; -fx-text-fill: #ffe8df;" text="Message :" textFill="WHITE">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin></Label>
+                  <TextArea fx:id="textAreaWrittenMessage" prefHeight="43.0" prefWidth="134.0" />
+                        <Button fx:id="sendall" mnemonicParsing="false" onAction="#sendMessageAll" prefHeight="25.0" prefWidth="93.0" styleClass="button" text="Send">
+                            <opaqueInsets>
+                                <Insets top="20.0" />
+                            </opaqueInsets>
+                            <HBox.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </HBox.margin></Button>
+                  <TextField fx:id="recieverName" prefHeight="27.0" prefWidth="112.0" />
+                        <Button fx:id="sendprivate" mnemonicParsing="false" onAction="#sendMessagePrivate" prefHeight="26.0" prefWidth="146.0" styleClass="button" text="Send Private">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin></Button>
+                    </children>
+                    <padding>
+                        <Insets left="35.0" top="30.0" />
+                    </padding>
+                </HBox>
+            </children>
+        </VBox>
+      <Label fx:id="errorLabel" layoutX="390.0" layoutY="506.0" styleClass="error" />
+    </children>
+</AnchorPane>

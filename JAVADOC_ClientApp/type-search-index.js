@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"pjv.controller","l":"ChatroomWindowController"},{"p":"pjv.controller","l":"Client"},{"p":"integrations","l":"ClientAppIntegrationTests"},{"p":"pjv.controller","l":"ClientTest"},{"p":"pjv.view","l":"ClientWindow"},{"p":"pjv.model","l":"Message"}]
